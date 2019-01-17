@@ -1,3 +1,13 @@
+"""
+$$\   $$\ $$\     $$\       $$\   $$\          $$\            $$\                 $$\
+$$ |  $$ |\$$\   $$  |      $$ | $$  |         $$ |           \__|                $$ |
+$$ |  $$ | \$$\ $$  /       $$ |$$  / $$$$$$\  $$ |$$\    $$\ $$\ $$$$$$$\        $$ |      $$$$$$\   $$$$$$\
+$$$$$$$$ |  \$$$$  /        $$$$$  / $$  __$$\ $$ |\$$\  $$  |$$ |$$  __$$\       $$ |     $$  __$$\ $$  __$$\
+$$  __$$ |   \$$  /         $$  $$<  $$$$$$$$ |$$ | \$$\$$  / $$ |$$ |  $$ |      $$ |     $$$$$$$$ |$$$$$$$$ |
+$$ |  $$ |    $$ |          $$ |\$$\ $$   ____|$$ |  \$$$  /  $$ |$$ |  $$ |      $$ |     $$   ____|$$   ____|
+$$ |  $$ |    $$ |$$\       $$ | \$$\\$$$$$$$\ $$ |   \$  /   $$ |$$ |  $$ |      $$$$$$$$\\$$$$$$$\ \$$$$$$$\
+\__|  \__|    \__|\__|      \__|  \__|\_______|\__|    \_/    \__|\__|  \__|      \________|\_______| \_______|
+"""
 from text_and_speech import TextAndSpeech
 from operations import Operations
 from interface import Interface
@@ -7,11 +17,10 @@ import threading
 import gi
 gi.require_version("Gtk", "3.0")
 
-
-music_folder_dir = ""  # directory of your music folder: /home/name/Music/
-openweathermap_api = ""  # openweathermap.org API token
-fixer_api = ""  # fixer.io API token
-newsapi_api = ""  # newsapi_org API token
+music_folder_dir = "/home/k0042n/Music/"  # directory of your music folder: /home/name/Music/
+openweathermap_api = "422c0a86a953386e6373a43b45dfbb7a"  # openweathermap.org API token
+fixer_api = "eb95fbc5122999debe2a0dcd7bd4372c"  # fixer.io API token
+newsapi_api = "de49bc8d15d24c4a835f34457ae54d2a"  # newsapi_org API token
 
 
 class Bot(object):
